@@ -1,22 +1,16 @@
-# DMC Website Template
+# Data Made Clear - Website
 
-A professional, modern React website template for Destination Management Companies (DMCs). Built with React Router 7, TypeScript, and clean, customizable styling.
+Professional business website for Data Made Clear - a data analytics and business intelligence company. Built with React Router 7, TypeScript, and modern web standards.
 
-## 🎯 Features
+## 🎯 About Data Made Clear
 
-- **Modern React Stack**: Built with React Router 7 and TypeScript
-- **Responsive Design**: Mobile-first approach, looks great on all devices
-- **Professional Layout**: Header, footer, navigation with mobile menu
-- **Complete Page Structure**:
-  - Home page with hero, services, features, destinations, testimonials
-  - About Us page
-  - Services overview page
-  - Destinations page (placeholder)
-  - Portfolio page (placeholder)
-  - Contact page with form
-- **Customizable Styling**: CSS variables for easy theming
-- **SEO Ready**: Meta tags, semantic HTML, accessible markup
-- **Fast Performance**: Optimized build with Vite
+Data Made Clear transforms complex data into clear, actionable insights. We provide:
+- Data Analytics & Insights
+- Business Intelligence & Dashboards
+- Data Strategy & Consulting
+- Data Visualization
+- Data Engineering & Infrastructure
+- AI & Machine Learning
 
 ## 🚀 Quick Start
 
@@ -52,8 +46,8 @@ dmc-website-template/
 │   │   ├── about.tsx           # About page
 │   │   ├── services.tsx        # Services page
 │   │   ├── contact.tsx         # Contact page
-│   │   ├── destinations.tsx    # Destinations (placeholder)
-│   │   └── portfolio.tsx       # Portfolio (placeholder)
+│   │   ├── destinations.tsx    # Industries (placeholder)
+│   │   └── portfolio.tsx       # Case studies (placeholder)
 │   ├── styles/
 │   │   ├── global.css          # Global styles & variables
 │   │   ├── layout.css          # Header/footer styles
@@ -72,18 +66,17 @@ Edit CSS variables in `app/styles/global.css`:
 
 ```css
 :root {
-  --color-primary: #1a365d;        /* Main brand color */
-  --color-accent: #d4af37;         /* Accent/CTA color */
-  --color-primary-light: #2d5a8f;  /* Light variant */
-  --color-primary-dark: #0f2744;   /* Dark variant */
-  /* ... more variables */
+  --color-primary: #1a365d;        /* Navy blue - main brand color */
+  --color-accent: #d4af37;         /* Gold - accent/CTA color */
+  --color-primary-light: #2d5a8f;  /* Light blue variant */
+  --color-primary-dark: #0f2744;   /* Dark navy variant */
 }
 ```
 
 ### Company Info
 
 1. **Navigation**: Edit `app/components/Layout.tsx`
-2. **Company Name**: Search for "YourDMC" and replace throughout
+2. **Company Name**: Currently "Data Made Clear" throughout
 3. **Contact Details**: Update in `app/components/Layout.tsx` (footer) and `app/routes/contact.tsx`
 4. **Meta Tags**: Update in each route file's `meta()` function
 
@@ -96,11 +89,11 @@ Edit CSS variables in `app/styles/global.css`:
 
 ### Images
 
-Replace placeholder images with your own:
+Replace placeholder Unsplash images with your own:
 - Hero backgrounds
-- Destination images
+- Industry/client images
 - Team photos
-- Portfolio gallery
+- Case study gallery
 
 ## 🛠️ Tech Stack
 
@@ -123,6 +116,15 @@ npm i -g vercel
 vercel
 ```
 
+### Netlify
+
+```bash
+# Build
+npm run build
+
+# Deploy build/ folder
+```
+
 ### Other Platforms
 
 Build the project and deploy the `build/` directory:
@@ -139,11 +141,11 @@ npm run build
 Create `.env` file for configuration:
 
 ```env
-# Example: Email service API key
+# Email service API key (for contact form)
 VITE_EMAIL_API_KEY=your_key_here
 
-# Example: Google Maps API
-VITE_MAPS_API_KEY=your_key_here
+# Analytics
+VITE_GA_TRACKING_ID=your_ga_id
 ```
 
 ### SEO & Meta Tags
@@ -153,38 +155,39 @@ Update meta tags in each route's `meta()` function:
 ```typescript
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Your Page Title" },
+    { title: "Your Page Title | Data Made Clear" },
     { name: "description", content: "Your description" },
-    // Add more meta tags as needed
   ];
 }
 ```
 
-## 📱 Mobile Menu
+## 📱 Mobile Responsive
 
-The mobile menu automatically activates on screens < 768px width. Customize breakpoint in `app/styles/layout.css`.
+- Fully responsive design
+- Mobile menu automatically activates on screens < 768px
+- Customize breakpoint in `app/styles/layout.css`
 
 ## 🎯 Next Steps
 
-1. Replace "YourDMC" with your company name
-2. Update all contact information
-3. Customize colors in `global.css`
-4. Add your real content and images
-5. Connect contact form to your backend
-6. Add your logo
-7. Set up analytics (Google Analytics, etc.)
-8. Configure SEO properly
-9. Test on multiple devices
-10. Deploy!
+1. ✅ Branding complete (Data Made Clear)
+2. ✅ Core pages implemented
+3. ⏳ Add real content and images
+4. ⏳ Connect contact form to backend/email service
+5. ⏳ Add logo and brand assets
+6. ⏳ Set up analytics
+7. ⏳ Add case studies/portfolio
+8. ⏳ Test on multiple devices
+9. ⏳ Deploy to production
 
 ## 📄 License
 
-This template is provided as-is for your projects. Customize freely!
+Copyright © 2026 Data Made Clear. All rights reserved.
 
-## 💼 Created By
+## 💼 Built By
 
 DevForge Agency - Professional web development services
+www.devforgeagency.com
 
 ---
 
-**Need help customizing this template?** Contact us at hello@devforgeagency.com
+**Need customization help?** Contact: matthew@devforgeagency.com

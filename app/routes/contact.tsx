@@ -3,8 +3,8 @@ import type { Route } from "./+types/contact";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Contact Us | YourDMC" },
-    { name: "description", content: "Get in touch with our destination management team. We're here to help plan your next unforgettable event." },
+    { title: "Contact Us | Data Made Clear" },
+    { name: "description", content: "Get in touch with our data analytics team. We're here to help transform your data into clear, actionable insights." },
   ];
 }
 
@@ -49,8 +49,8 @@ export default function Contact() {
             <div>
               <h2>Get in Touch</h2>
               <p style={{ marginBottom: 'var(--spacing-xl)' }}>
-                Whether you're planning a corporate event, incentive trip, or luxury travel experience,
-                our team is here to help bring your vision to life.
+                Whether you need help with data analytics, business intelligence, or data strategy,
+                our team is here to help transform your data into clear, actionable insights.
               </p>
 
               <div style={{ marginBottom: 'var(--spacing-xl)' }}>
@@ -81,7 +81,7 @@ export default function Contact() {
                       ✉️ Email
                     </strong>
                     <p style={{ color: 'var(--color-gray-dark)', margin: 0 }}>
-                      <a href="mailto:info@yourdmc.com">info@yourdmc.com</a>
+                      <a href="mailto:info@datamadeclear.com">info@datamadeclear.com</a>
                     </p>
                   </div>
 
@@ -195,7 +195,7 @@ export default function Contact() {
 
                 <div>
                   <label htmlFor="eventType" style={{ display: 'block', marginBottom: 'var(--spacing-xs)', fontWeight: 600 }}>
-                    Event Type
+                    Project Type
                   </label>
                   <select
                     id="eventType"
@@ -210,23 +210,25 @@ export default function Contact() {
                       fontSize: '1rem',
                     }}
                   >
-                    <option value="">Select event type...</option>
-                    <option value="corporate">Corporate Event</option>
-                    <option value="incentive">Incentive Travel</option>
-                    <option value="wedding">Wedding</option>
-                    <option value="conference">Conference</option>
+                    <option value="">Select project type...</option>
+                    <option value="analytics">Data Analytics</option>
+                    <option value="bi">Business Intelligence</option>
+                    <option value="strategy">Data Strategy</option>
+                    <option value="engineering">Data Engineering</option>
+                    <option value="ai">AI/ML</option>
                     <option value="other">Other</option>
                   </select>
                 </div>
 
                 <div>
                   <label htmlFor="destination" style={{ display: 'block', marginBottom: 'var(--spacing-xs)', fontWeight: 600 }}>
-                    Preferred Destination
+                    Industry
                   </label>
                   <input
                     type="text"
                     id="destination"
                     name="destination"
+                    placeholder="e.g., E-commerce, Healthcare, Finance"
                     value={formData.destination}
                     onChange={handleChange}
                     style={{

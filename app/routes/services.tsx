@@ -3,83 +3,83 @@ import type { Route } from "./+types/services";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Our Services | YourDMC" },
-    { name: "description", content: "Comprehensive destination management services including event planning, transportation, accommodation, tours, and VIP services." },
+    { title: "Our Services | Data Made Clear" },
+    { name: "description", content: "Comprehensive data analytics, business intelligence, data visualization, and AI/ML services to transform your business." },
   ];
 }
 
 export default function Services() {
   const services = [
     {
-      title: "Event Planning & Management",
-      icon: "🎉",
-      description: "From concept to execution, we handle every aspect of your event with precision and creativity.",
+      title: "Data Analytics & Insights",
+      icon: "📊",
+      description: "Deep analysis of your data to uncover trends, patterns, and actionable insights.",
       features: [
-        "Corporate conferences & meetings",
-        "Incentive programs & team building",
-        "Product launches & brand activations",
-        "Gala dinners & award ceremonies",
-        "Weddings & social events",
+        "Customer behavior analysis",
+        "Sales & revenue analytics",
+        "Market trend analysis",
+        "Performance metrics tracking",
+        "Predictive analytics",
       ],
     },
     {
-      title: "Transportation Services",
-      icon: "🚗",
-      description: "Reliable, luxury transportation solutions for individuals and groups of any size.",
+      title: "Business Intelligence & Dashboards",
+      icon: "📈",
+      description: "Real-time dashboards and reporting systems for instant business visibility.",
       features: [
-        "Airport meet & greet",
-        "Executive sedan service",
-        "Motor coach charters",
-        "Vintage & specialty vehicles",
-        "Multilingual chauffeurs",
+        "Executive dashboards",
+        "KPI tracking & monitoring",
+        "Automated reporting",
+        "Self-service BI tools",
+        "Mobile-responsive dashboards",
       ],
     },
     {
-      title: "Accommodation Management",
-      icon: "🏨",
-      description: "Curated hotel selections and property management tailored to your preferences and budget.",
+      title: "Data Strategy & Consulting",
+      icon: "🎯",
+      description: "Strategic roadmap development aligned with your business objectives.",
       features: [
-        "Hotel sourcing & contracting",
-        "Room block management",
-        "VIP upgrades & amenities",
-        "Boutique & luxury properties",
-        "Villa & private residence rentals",
+        "Data maturity assessment",
+        "Analytics roadmap planning",
+        "Technology stack evaluation",
+        "Data governance frameworks",
+        "Change management support",
       ],
     },
     {
-      title: "Activities & Experiences",
-      icon: "🗺️",
-      description: "Unique, memorable experiences that showcase the best of each destination.",
+      title: "Data Visualization",
+      icon: "🔍",
+      description: "Transform complex data into clear, compelling visual stories.",
       features: [
-        "Guided city tours",
-        "Cultural immersions",
-        "Adventure activities",
-        "Culinary experiences",
-        "Custom itinerary design",
+        "Interactive charts & graphs",
+        "Infographic design",
+        "Storytelling with data",
+        "Custom visualization development",
+        "Brand-aligned design",
       ],
     },
     {
-      title: "VIP & Concierge Services",
-      icon: "⭐",
-      description: "Personalized attention and exclusive access for discerning clients.",
+      title: "Data Engineering & Infrastructure",
+      icon: "⚙️",
+      description: "Build scalable data pipelines and modern data infrastructure.",
       features: [
-        "24/7 concierge support",
-        "Private venue access",
-        "Celebrity meet & greets",
-        "Personal shopping experiences",
-        "Luxury lifestyle services",
+        "Data warehouse design",
+        "ETL/ELT pipeline development",
+        "Cloud data platform setup",
+        "Data quality & cleansing",
+        "API integrations",
       ],
     },
     {
-      title: "Logistics & Operations",
-      icon: "📋",
-      description: "Behind-the-scenes coordination that ensures flawless execution.",
+      title: "AI & Machine Learning",
+      icon: "🤖",
+      description: "Intelligent automation and predictive models for competitive advantage.",
       features: [
-        "Registration & badging",
-        "Audiovisual production",
-        "Signage & branding",
-        "On-site coordination",
-        "Risk management",
+        "Predictive modeling",
+        "Forecasting algorithms",
+        "Recommendation engines",
+        "Natural language processing",
+        "Anomaly detection",
       ],
     },
   ];
@@ -89,7 +89,7 @@ export default function Services() {
       <section className="page-hero">
         <div className="container text-center">
           <h1>Our Services</h1>
-          <p className="lead">Comprehensive destination management solutions tailored to your needs</p>
+          <p className="lead">Comprehensive data solutions that drive business results</p>
         </div>
       </section>
 
@@ -124,9 +124,9 @@ export default function Services() {
       <section className="section section-alt">
         <div className="container text-center">
           <h2>Ready to Get Started?</h2>
-          <p className="lead mb-lg">Let's discuss how we can make your event extraordinary</p>
+          <p className="lead mb-lg">Let's discuss how we can help you leverage your data for better business outcomes</p>
           <Link to="/contact" className="btn btn-primary">
-            Contact Us Today
+            Schedule a Consultation
           </Link>
         </div>
       </section>

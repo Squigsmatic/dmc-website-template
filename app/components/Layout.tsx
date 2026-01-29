@@ -11,8 +11,8 @@ export default function Layout() {
       <header className="header">
         <nav className="nav container">
           <Link to="/" className="logo">
-            <h1>YourDMC</h1>
-            <span className="tagline">Destination Management Excellence</span>
+            <h1>Data Made Clear</h1>
+            <span className="tagline">Transform Data Into Decisions</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -63,8 +63,8 @@ export default function Layout() {
           <div className="footer-grid">
             {/* Company Info */}
             <div className="footer-section">
-              <h3>YourDMC</h3>
-              <p>Your trusted partner in destination management, creating unforgettable experiences worldwide.</p>
+              <h3>Data Made Clear</h3>
+              <p>Your trusted partner in data analytics and business intelligence, transforming complex data into clear, actionable insights.</p>
               <div className="social-links">
                 <a href="#" aria-label="Facebook">
                   <i className="fab fa-facebook"></i>
@@ -119,14 +119,14 @@ export default function Layout() {
                 </li>
                 <li>
                   <i className="fas fa-envelope"></i>
-                  <a href="mailto:info@yourdmc.com">info@yourdmc.com</a>
+                  <a href="mailto:info@datamadeclear.com">info@datamadeclear.com</a>
                 </li>
               </ul>
             </div>
           </div>
 
           <div className="footer-bottom">
-            <p>&copy; {new Date().getFullYear()} YourDMC. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Data Made Clear. All rights reserved.</p>
             <div className="footer-links">
               <Link to="/privacy">Privacy Policy</Link>
               <Link to="/terms">Terms of Service</Link>
