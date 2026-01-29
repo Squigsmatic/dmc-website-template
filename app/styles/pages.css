@@ -1,0 +1,41 @@
+/* Page Styles */
+
+.page {
+  min-height: 100vh;
+}
+
+.page-hero {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  color: var(--color-white);
+  padding: var(--spacing-2xl) var(--spacing-lg);
+  text-align: center;
+}
+
+.page-hero h1 {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-white);
+}
+
+.page-hero .lead {
+  font-size: 1.25rem;
+  opacity: 0.9;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.lead {
+  font-size: 1.125rem;
+  color: var(--color-gray-dark);
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .page-hero h1 {
+    font-size: 2rem;
+  }
+
+  .page-hero .lead {
+    font-size: 1rem;
+  }
+}
